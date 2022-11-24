@@ -1,0 +1,90 @@
+
+.sidebar div:hover{
+    text-decoration: none;
+    background-color:#849feb;
+    color:white;
+}
+
+.divbutton_top_0, .divbutton_top_1, .divbutton_top_2,
+.divbutton_top_3, .divbutton_top_4, .divbutton_top_5 {
+    width: 120px;
+    display: block;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+    border: none;
+    font-size: medium;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    text-decoration: none;
+    background-color:#6b81bf;
+    color: white;
+}
+
+.divbutton_sub_2, .divbutton_sub_3, .divbutton_sub_4 {
+    text-align: right;
+    border: none;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 10px;
+
+    text-decoration: none;
+    background-color: white;
+    pointer-events: none;
+    opacity: 0;
+
+    font-size: medium;
+    box-shadow: rgba(9, 30, 66, 0) 0px 1px 1px, rgba(9, 30, 66, 0) 0px 0px 1px 1px;
+    line-height: 0%;
+    color: rgba(107, 129, 191, 0);
+    transition: ease-out all 0.25s;
+}
+
+.subelements {    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+
+    pointer-events: all;
+    opacity: 1;
+    font-size: medium;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    line-height: 125%;
+    color: rgba(107, 129, 191, 1);
+    transition: line-height 0.25s ease-out, color 0.25s ease-out;
+}
+
+.sidebar #B_home {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.sidebar #B_contact {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.sidebar #B_home,  #B_news,  #B_projects,
+         #B_media, #B_about, #B_contact,
+         .divbutton_sub_2, .divbutton_sub_3,
+         .divbutton_sub_4, .divbutton_sub_4 {
+    cursor: pointer;
+}
+
+.pj_subDIV, .ab_subDIV, .md_subDIV{
+    background-color: white;
+    position: flex;
+    height: fit-content;
+    transition-duration: 0.25s;
+}
+
+.subDIV_expand {
+    height: fit-content;
+    transition: ease-out height 0.25s;
+}

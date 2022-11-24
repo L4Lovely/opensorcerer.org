@@ -1,0 +1,8 @@
+.top-container img,span{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+.topLogo{
+    display: inline-block;
+}

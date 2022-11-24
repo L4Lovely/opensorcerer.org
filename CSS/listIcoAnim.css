@@ -1,0 +1,75 @@
+.icoPjBar, .icoMdBar, .icoAbBar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 4px;
+    width:20px;
+    margin-left: 90px;
+    float: right;
+    right: 0;
+    margin-top: 7px;
+    margin-bottom: auto;
+    margin-left: auto;
+    }
+    
+.icoPjBar_top, .icoMdBar_top, .icoAbBar_top, 
+.icoPjBar_mid, .icoMdBar_mid, .icoAbBar_mid,
+.icoPjBar_bot, .icoMdBar_bot, .icoAbBar_bot {
+    width: 7px;
+    background-color: white;
+    height: 1px;
+    margin-left: auto;
+    border-radius: 15px;
+}
+
+.icoPjBar_top, .icoMdBar_top, .icoAbBar_top { grid-area: 1; }
+.icoPjBar_mid, .icoMdBar_mid, .icoAbBar_mid { grid-area: 2; }
+.icoPjBar_bot, .icoMdBar_bot, .icoAbBar_bot { grid-area: 3; }
+
+#B_projects:hover .icoPjBar_top,
+#B_media:hover .icoMdBar_top,
+#B_about:hover .icoAbBar_top {
+    width: 15px;
+    transition: ease-in;
+    transition-duration: 0.22s;}
+
+#B_projects:hover .icoPjBar_mid,
+#B_media:hover .icoMdBar_mid,
+#B_about:hover .icoAbBar_mid {
+    width: 15px;
+    transition: ease-in;
+    transition-duration: 0.22s;
+    transition-delay:0.05s;}
+
+#B_projects:hover .icoPjBar_bot,
+#B_media:hover .icoMdBar_bot,
+#B_about:hover .icoAbBar_bot {
+    width: 15px;
+    transition: ease-in;
+    transition-duration: 0.22s;
+    transition-delay: 0.1s;}
+
+#B_projects:not(:hover) .icoPjBar_top,
+#B_media:not(:hover) .icoMdBar_top,
+#B_about:not(:hover) .icoAbBar_top {
+    width: 7px;
+    transition: ease-out;
+    transition-duration: 0.22s;
+    transition-delay: 0s;}
+
+#B_projects:not(:hover) .icoPjBar_mid,
+#B_media:not(:hover) .icoMdBar_mid,
+#B_about:not(:hover) .icoAbBar_mid {
+    width: 7px;
+    transition: ease-out;
+    transition-duration: 0.22s;
+    transition-delay:0.05s;}
+
+#B_projects:not(:hover) .icoPjBar_bot,
+#B_media:not(:hover) .icoMdBar_bot,
+#B_about:not(:hover) .icoAbBar_bot {
+    width: 7px;
+    transition: ease-out;
+    transition-duration: 0.22s;
+    transition-delay: 0.1s;}
